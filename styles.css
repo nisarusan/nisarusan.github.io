@@ -11,7 +11,7 @@
 :root {
     --background: #282C33;
     --primary: #C778DD;
-    --gray-color: #ABB2BF;
+    --gray: #ABB2BF;
     --white: #fffff;
     --orange: #F5945D;
 }
@@ -40,6 +40,7 @@ nav p {
 nav ul {
     display: flex;
     list-style: none;
+    color: var(--gray);
 }
 
 nav ul li {
@@ -49,6 +50,16 @@ nav ul li:before {
     content: '#';
     margin-right: 4px;
     color: var(--orange);
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: bold;
 }
 
 .logo-section {
@@ -71,5 +82,81 @@ nav ul li:before {
 }
 
 .about {
-    padding: 0 5.625rem;
+    padding-right: 15rem;
+    text-align: left;
+}
+
+.about h1 {
+    padding-top: 4rem;
+}
+
+.about h2 {
+    line-height: auto;
+}
+.about p {
+    color: var(--gray);
+    padding: 1.75rem 0 1.5rem 0;
+}
+
+.about button {
+    font-family: inherit;
+    background-color: var(--background);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--orange);
+    font-weight: 500;
+    letter-spacing: 0.1rem;:
+
+}
+
+.about button:hover {
+    background-color: rgba(245, 148, 93, 0.2);
+
+}
+.about button:hover:after {
+    content: '<~>';
+    margin-left: 0.8rem;
+}
+
+
+.about-img {
+    position: relative;
+}
+.about-img .rectangle {
+    position: absolute;
+    top: 5.25rem;
+    z-index: -1;
+}
+
+.about-img .person {
+    height: 100%;
+    z-index: 2;
+}
+
+.about-img .dots {
+    position: absolute;
+    bottom: 7rem;
+    right: 16px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-progress {
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid var(--gray);
+    padding-right: 2rem;
+}
+
+.vierkant {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.5rem;
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
 }
