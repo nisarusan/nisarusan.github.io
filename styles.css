@@ -1,6 +1,6 @@
-// Import Font Fira-Code
+/*//Import Font Fira-Code*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('svg.css');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,6 +21,7 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: var(--background);
     color: #fff;
+    height: 1500px;
 }
 
 /*--------------Layout-------------------------------- */
@@ -28,15 +29,57 @@ body {
     margin: 0 10.68rem;
 }
 
-/*---------- Header and nav -------------------------------- */
+.left-aside {
+   position: absolute;
+    top: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    /*position: relative;*/
+    /*top: -0.5rem;*/
+    border-left: 1px solid var(--gray);
+    height: 12rem;
+    margin-left: 2rem;
+}
+
+
+.reference-media {
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    width: 32px;
+    margin-top: 0.5rem;
+    margin-left: 1.1rem;
+}
+
+.reference-media img {
+    padding-top: 0.5rem
+}
+/*.svg svg:hover, .svg svg > path:hover {*/
+/*    fill: white;*/
+/*}*/
+/*!*---------- Header and nav -------------------------------- *!*/
 header {
+    /*Sticky header */
+    /*position: sticky;*/
+    /*top: 0;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
+    background-color: var(--background);
+    padding: 2rem 0;
 }
+
 nav p {
     font-weight: bold;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -46,6 +89,7 @@ nav ul {
 nav ul li {
     padding: 0 2rem 0;
 }
+
 nav ul li:before {
     content: '#';
     margin-right: 4px;
@@ -67,6 +111,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
+
 .logo img {
     position: relative;
     top: 0.2rem;
@@ -93,6 +138,7 @@ nav a:hover {
 .about h2 {
     line-height: auto;
 }
+
 .about p {
     color: var(--gray);
     padding: 1.75rem 0 1.5rem 0;
@@ -113,6 +159,7 @@ nav a:hover {
     background-color: rgba(245, 148, 93, 0.2);
 
 }
+
 .about button:hover:after {
     content: '<~>';
     margin-left: 0.8rem;
@@ -122,6 +169,7 @@ nav a:hover {
 .about-img {
     position: relative;
 }
+
 .about-img .rectangle {
     position: absolute;
     top: 5.25rem;
@@ -144,19 +192,50 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
 }
+
 .about-progress {
-    height: 70%;
+    height: 2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border: 1px solid var(--gray);
     padding-right: 2rem;
+    color: var(--gray);
 }
 
+.about-progress span {
+    color: white;
+    font-weight: bold;
+}
 .vierkant {
     height: 1rem;
     width: 1rem;
     margin: 0 0.5rem;
     border: 1px solid var(--orange);
     background-color: var(--orange);
+}
+
+
+/* ------------------ Section BlockQuote --------------- */
+
+.inner-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.blockquotes {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0;
+}
+
+blockquote:first-child {
+    border: 1px solid var(--gray);
+    padding: 2rem;
+}
+
+blockquote:last-child {
+    border: 1px solid var(--gray);
+    padding: 1rem;
+    align-self: flex-end;
 }
