@@ -1,6 +1,7 @@
 /*//Import Font Fira-Code*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('svg.css');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -32,7 +33,7 @@ body {
 }
 
 .left-aside {
-   position: absolute;
+    position: absolute;
     top: 0;
 }
 
@@ -62,6 +63,7 @@ body {
 .reference-media img {
     padding-top: 0.5rem
 }
+
 /*.svg svg:hover, .svg svg > path:hover {*/
 /*    fill: white;*/
 /*}*/
@@ -209,6 +211,7 @@ nav a:hover {
     color: white;
     font-weight: bold;
 }
+
 .vierkant {
     height: 1rem;
     width: 1rem;
@@ -254,6 +257,7 @@ section .intro-project {
 section span:first-child {
     color: var(--orange);
 }
+
 section .line-horizontal {
     width: 31rem;
     border-top: 1px solid var(--orange);
@@ -274,11 +278,16 @@ section .portfolio-wrapper {
 
 section article {
     border: 1px solid var(--gray);
+}
 
+section article:hover {
+    /*border: 1px solid var(--orange);*/
+    box-shadow: 20px 20px 60px #8c8c8c,
+    -20px -20px 60px #cbcbcb;
 
 }
 
-section article ul {
+section article ul, .skills-develop ul {
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid var(--gray);
@@ -298,4 +307,53 @@ section .article-info {
 section .article-info p {
     padding: 1rem 0;
 }
+
+
+/* ----- Skills Section --------- */
+
+section.inner-container  {
+    margin-top: 6.65rem;
+}
+section .skills-wrapper {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 1rem;
+
+}
+
+.skills-develop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*height: 100%;*/
+    gap: 1rem;
+    /*align-items: flex-start;*/
+    border: 1px solid var(--gray);
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.skills-develop p {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray);
+    font-weight: bold;
+}
+
+.skills-develop ul {
+    /*border overwrite */
+    border: none;
+    padding: 1rem;
+    justify-content: flex-start;
+
+}
+
+.right-side {
+    gap: 1rem;
+    display: flex;
+}
+
+
+
 
