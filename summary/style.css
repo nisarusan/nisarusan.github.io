@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", "Hanken", san-serif;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem 4rem 1rem;
+    border-radius: 0 0 3rem 3rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: hsla(252, 100%, 67%, 1);
+    background: linear-gradient(180deg, hsla(252, 100%, 67%, 1) 0%, hsla(241, 81%, 54%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(252, 100%, 67%, 1) 0%, hsla(241, 81%, 54%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(252, 100%, 67%, 1) 0%, hsla(241, 81%, 54%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7857FF", endColorstr="#2E2BE9", GradientType=1);
+}
+
+
+.result h1, .result-circle {
+    padding: 2rem 0;
+    color: #c0c0c0;
+    font-size: 1.8rem;
+}
+
+.result h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+.result .last {
+    color: grey;
+    font-size: 1.6rem;
+}
+
+.result-circle {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: #cecece;
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    background: hsla(256, 72%, 46%, 1);
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4E21CA", endColorstr="#2421CA", GradientType=1);
+    border-radius: 50%;
+
+}
+
+.result-status {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.summary {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*temporary */
+}
+
+.inner-container h2 {
+    width: 80%;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ---- ICONS --*/
+
+
+.icns {
+    height: 20px;
+    width: 20px;
+}
+
+.icon-reaction {
+    background-image: url('assets/images/icon-reaction.svg');
+}
+
+.icon-memory {
+    background-image: url('assets/images/icon-memory.svg');
+}
+
+.icon-verbal {
+    background-image: url('assets/images/icon-verbal.svg');
+}
+
+.icon-visual {
+    background-image: url('assets/images/icon-visual.svg');
+}
+
+.red-bg {
+    background-color: hsl(0, 100%, 67%, 10%);
+}
+
+.yellow-bg {
+    background-color: hsl(39, 100%, 56%, 10%);
+}
+
+.green-bg {
+    background-color: hsl(166, 100%, 37%, 10%);
+}
+
+.blue-bg {
+    background-color: hsl(234, 85%, 45%, 10%);
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+
+}
+
+.yellow {
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    color: hsl(166, 100%, 37%);
+}
+
+.blue-bg {
+    color: hsl(234, 85%, 45%);
+}
+
+button {
+    border-radius: 2rem;
+    padding: 1.5rem 2rem;
+    width: 80%;
+    color: #fff;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+}
+
+
+
+/*-------------------DESKTOP -----------*/
+
+
+@media (min-width: 768px) {
+    body {
+        min-height: 100vh;
+    }
+}
+@media (min-width: 1440px) {
+
+    .result {
+        width: 50%;
+        border-radius: 3rem;
+    }
+
+    .summary {
+        width: 50%;
+    }
+
+}
+
+
+
+

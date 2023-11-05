@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js" defer="module"></script>
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <label>
+            <p>
+                Day:
+                <input type="number" id="day" name="day" autocomplete="off" placeholder="DD" required/>
+                <em id="warning-day"></em>
+            </p>
+            <p>
+                Month:
+                <input type="number" id="month" name="name" autocomplete="off" placeholder="MM" required/>
+                <em id="warning-month"></em>
+            </p>
+            <p>
+                Year:
+                <input type="number" id="year" name="name" autocomplete="off" placeholder="YYYY" required/>
+                <em class="warning-year"></em>
+            </p>
+
+        </label>
+        <div class="button" type="submit" onclick="getValue()">
+            <hr>
+            <div class="round">
+                <button class="circle"><img src="images/icon-arrow.svg"></button>
+            </div>
+        </div>
+        <div class="dates">
+            <div class="day">
+                <h1>
+                    <span class="date-color" id="year-now">--</span> years
+                </h1>
+                <h1>
+                    <span class="date-color" id="months-now">--</span> months
+                </h1>
+                <h1>
+                    <span class="date-color" id="days-now">--</span> days
+                </h1>
+            </div>
+        </div>
+</section>
+
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Nizar Abak</a>.
+</div>
+
+</body>
+</html>
