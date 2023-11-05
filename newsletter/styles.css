@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 10px;
+}
+
+
+/*-----------------FONTS AND STYLES--------------*/
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+ul li {
+    font-size: 1.4rem;
+}
+
+.subscribe p {
+    font-size: 1.6rem;
+}
+
+.subscribe .email-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-info p {
+    color: black;
+}
+
+.subscribe .email-info .warning-message {
+    color: red;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: hsl(234, 29%, 20%);
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 0;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: hsla(323, 100%, 69%, 1);
+    background: linear-gradient(90deg, hsla(323, 100%, 69%, 1) 0%, hsla(18, 83%, 55%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(323, 100%, 69%, 1) 0%, hsla(18, 83%, 55%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(323, 100%, 69%, 1) 0%, hsla(18, 83%, 55%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF5FC2", endColorstr="#EB652B", GradientType=1);
+    transition: ease-in;
+    box-shadow: 0px 5px 37px -17px #EB662DFF;
+}
+
+input {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid hsl(231, 7%, 60%);
+    outline: none;
+}
+
+section button {
+    margin: 2rem 0 0 0;
+}
+
+section ul li {
+    margin: 0;
+    padding-left: 2.5rem;
+    list-style: none;
+    background-image: url("assets/images/icon-success.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+}
+
+
+/*------------------------------------------------*/
+
+body {
+    /* temporary height */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(234, 29%, 20%);
+}
+
+/*---------------------LAYOUT---------------------------------*/
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    flex-grow: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    height: 100vh;
+}
+
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 5rem;
+    padding: 4rem 3rem;
+    order: 2;
+}
+
+.subscribe-img {
+    order: 1;
+}
+
+.subscribe-img img {
+    width: 100%;
+}
+
+.subscribe p:first-of-type {
+    padding-top: 2rem;
+    line-height: normal;
+}
+
+/* --------------------FOOTER--------------------------------*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*------------Desktop--------*/
+
+@media (min-width: 768px) {
+    section {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 2rem;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        height: auto;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 5rem;
+        /*padding: 0 5rem;*/
+        order: 1;
+        width: 45%;
+    }
+
+
+}
+
+
+    /*------------------------CARDS-----------------*/
+.card {
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 5rem 0;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+
+}
+
+.inner-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h2 {
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+
+.card p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.card p:last-of-type {
+    padding-bottom: 2rem;
+}
+
+.check {
+    background-image: url("assets/images/icon-success.svg");
+    width: 6rem;
+    height: 6rem;
+    background-size: 6rem;
+}
+
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+<body>
+<section id="subscribe">
+    <!-- Sign-up form start -->
+    <div class="subscribe">
+        <h1>Stay updated!</h1>
+
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul>
+            <li>Product discovery and building what matters</li>
+            <li> Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+        </ul>
+        <div class="email-info">
+        <p>Email address</p>
+        <p class="warning-message"></p>
+        </div>
+        <input type="text" id="email" name="email" placeholder="email@company.com"/>
+
+        <button onClick="validateEmail(document.getElementById('email').value)">Subscribe to monthly newsletter</button>
+
+        <!-- Sign-up form end -->
+
+        <!-- Success message start -->
+    </div>
+    <div class="subscribe-img">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="Illustration Signup">
+    </div>
+</section>
+<div class="card hide" id="card">
+    <div class="inner-container">
+        <div class="check"></div>
+        <h2>
+            Thanks for subscribing!
+        </h2>
+        <p>
+            A confirmation e-mail has been sent to ash@lorencompany.com. Please open it and click the button inside to
+            confirm your subscription.
+        </p>
+        <button onclick="location.href="/">Dismess message</button>
+    </div>
+</div>
+<!--<div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->
+<!--    Coded by <a href="#">Your Name Here</a>.-->
+<!--</div>-->
+</body>
+</html>
