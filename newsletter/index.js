@@ -15,6 +15,11 @@ const validateEmail = (email) => {
         let hide = document.getElementById('card');
         let subscribe = document.getElementById('subscribe');
         hide.classList.remove('hide');
+
+        //Email input
+        let emailInput = document.querySelector('.email');
+        emailInput.innerText = email;
+
         subscribe.classList.add('hide');
     } else {
         document.querySelector('.warning-message').innerHTML = "Valid e-mail required";

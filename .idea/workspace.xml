@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9489ee1-4ca0-4b92-8f54-ce5c778be48a" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/async.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/Dribble.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/Figma.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/Github.svg" afterDir="false" />
@@ -60,8 +61,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/newsletter" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/summary" />
       <recent name="$PROJECT_DIR$/age" />
     </key>
@@ -74,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699220616869</updated>
-      <workItem from="1699220617932" duration="1321000" />
+      <workItem from="1699220617932" duration="2993000" />
     </task>
     <servers />
   </component>
