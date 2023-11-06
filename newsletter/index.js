@@ -26,5 +26,11 @@ const validateEmail = (email) => {
     }
 };
 
+const getBack = () => {
+
+    //actions
+    document.querySelector('subscribe').classList.remove('hide');
+    document.querySelector('card').classList.add('hide');
+}
 
 
