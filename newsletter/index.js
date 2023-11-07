@@ -27,10 +27,18 @@ const validateEmail = (email) => {
 };
 
 const getBack = () => {
-
-    //actions
-    document.querySelector('subscribe').classList.remove('hide');
-    document.querySelector('card').classList.add('hide');
+    document.querySelector('#subscribe').classList.remove('hide');
+    document.querySelector('#card').classList.add('hide');
 }
+
+//Playground testing key events
+const getKey = (e) => {
+    console.log(e.key);
+}
+const buttonNew = document.querySelector('#email');
+buttonNew.addEventListener('keypress', getKey);
+
+
+
 
 

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    font-size: 10px;
+
+    --primary-orange: hsl(35, 77%, 62%);
+    --primary-red: hsl(5, 85%, 63%);
+    --neutral-white: hsl(36, 100%, 99%);
+    --gray-blue: hsl(233, 8%, 79%);
+    --dark-blue: hsl(236, 13%, 42%);
+    --darker-blue: hsl(240, 100%, 5%);
+    --regular-weight: 400;
+    --bold-weight: 700;
+    --extra-bold: 800;
+
+
+}
+
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+
+/*Layout*/
+
+.container {
+   margin: 9rem 16rem;
+}
+
+/* header */
+header {
+    margin-bottom: 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    color: var(--gray-blue);
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2.1rem;
+    font-size: 1.8rem;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+section .intro {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+section .intro article {
+    display: flex;
+    gap: 2rem;
+}
+section .intro h2 {
+    font-size: 6rem;
+    font-weight: var(--extra-bold);
+    line-height: 7rem;
+}
+
+section .intro articles .summary {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    flex: 1;
+    width: 100%;
+    background-color: var(--darker-blue);
+    color: #fff;
+}
+
+
+figure img {
+    width: 100%;
+}
+section .top3 {
+    display: flex;
+}
+article .top3 {
+    display: flex;
+}
+
+
+/*Footer attribution*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+/* Desktop version min width 1440px, mobile need to be smaller then 375px) */
+@media (min-width: 1440px) {
+
+}
+
+
