@@ -1,25 +1,20 @@
 const h4 = document.querySelector('nav h4');
-const bgElements = document.querySelectorAll('.blue');
+const bgElements = document.querySelectorAll('li.blue');
 const notification = document.querySelector('.notification');
-
-
+let notificationValue = 3;
 
 h4.addEventListener('click', () => {
     bgElements.forEach(element => {
-        let iterationCount = 0;
-        if(iterationCount < 2) {
             element.classList.remove('blue');
-            iterationCount++;
-        }
-    notification.textContent = 0;
     });
+    notification.textContent = 0;
 });
 
 bgElements.forEach(element => {
     element.addEventListener('click', (e) => {
-        let iterationCount = 0;
-        if(iterationCount < 2) {
-            e.currentTarget.classList.remove('blue');
-        }
+        e.currentTarget.classList.remove('blue');
+        notificationValue -= 1;
+        notification.textContent = notificationValue;
     });
 });
+
