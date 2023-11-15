@@ -13,8 +13,10 @@ h4.addEventListener('click', () => {
 bgElements.forEach(element => {
     element.addEventListener('click', (e) => {
         e.currentTarget.classList.remove('blue');
-        notificationValue -= 1;
-        notification.textContent = notificationValue;
+        if(notificationValue > 0) {
+            notificationValue -= 1;
+            notification.textContent = notificationValue;
+        }
     });
 });
 
