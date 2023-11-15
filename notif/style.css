@@ -4,12 +4,8 @@
     marign: 0;
 }
 
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
-
-}
 
 :root {
     font-size: 10px;
@@ -25,13 +21,13 @@
     --primary-color-dgray-blue: hsl(219, 12%, 42%);
     --primary-color-vdark-blue: hsl(224, 21%, 14%);
     --paragraph: 16px;
-    --font: 'Plus Jakarta Sans';
+    --font: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
