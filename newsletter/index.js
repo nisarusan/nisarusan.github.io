@@ -30,13 +30,16 @@ const getBack = () => {
     document.querySelector('#subscribe').classList.remove('hide');
     document.querySelector('#card').classList.add('hide');
 }
-
+// dayArr.forEach(day => {
+//     day.classList.add("required");
+//     day.innerHTML = "This field is required";
 //Playground testing key events
 const getKey = (e) => {
-    console.log(e.key);
+console.log(e.target.value);
 }
 const buttonNew = document.querySelector('#email');
 buttonNew.addEventListener('keypress', getKey);
+
 
 
 

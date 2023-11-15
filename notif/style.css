@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    marign: 0;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+
+
+}
+
+:root {
+    font-size: 10px;
+    --mobile-size: 375px;
+    --desktop-size: 730px;
+    --primary-color-red: hsl(1, 90%, 64%);
+    --primary-color-blue: hsl(219, 85%, 26%);
+    --primary-color-neutral-white: hsl(0, 0%, 100%);
+    --primary-color-vlightblue: hsl(210, 60%, 98%);
+    --primary-color-lgblue: hsl(211, 68%, 94%);
+    --primary-color-lgblue2: hsl(205, 33%, 90%);
+    --primary-color-gray-blue: hsl(219, 14%, 63%);
+    --primary-color-dgray-blue: hsl(219, 12%, 42%);
+    --primary-color-vdark-blue: hsl(224, 21%, 14%);
+    --paragraph: 16px;
+    --font: 'Plus Jakarta Sans';
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Plus Jakarta Sans';
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: var(--paragraph);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav, article {
+    margin: 0.5rem 2rem;
+}
+
+
+.img-box {
+    flex-basis: 5rem;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+section {
+    padding: 1rem;
+}
+
+.post {
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.post p:nth-child(2) {
+    line-height: 0.2;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+}
+
+.blue {
+    background-color: var(--primary-color-vlightblue);
+}
+
+p.blue {
+    background-color: var(--primary-color-lgblue);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    margin-left: 6rem;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.private-message {
+    display: flex;
+    flex-direction: column;
+}
+.strong {
+    font-weight: 900;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+nav h1 {
+    font-weight: bold;
+}
+span.notification {
+    margin-left: 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.1rem 1.2rem;
+    background-color: var(--primary-color-blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 600px) {
+    section {
+        border-radius: 2rem;
+        padding: 2rem;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        max-width: var(--desktop-size);
+    }
+}
