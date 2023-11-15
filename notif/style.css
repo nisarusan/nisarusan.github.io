@@ -28,8 +28,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     font-size: var(--paragraph);
 
@@ -120,6 +118,10 @@ span.notification {
 
 
 @media (min-width: 600px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
     section {
         border-radius: 2rem;
         padding: 2rem;
