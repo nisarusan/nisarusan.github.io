@@ -41,6 +41,15 @@ nav, article {
     margin: 0.5rem 2rem;
 }
 
+nav h4 {
+    color: var(--primary-color-gray-blue);
+    font-weight: normal;
+}
+
+nav h4:hover {
+    color: var(--primary-color-blue);
+    cursor: pointer;
+}
 
 .img-box {
     flex-basis: 5rem;
