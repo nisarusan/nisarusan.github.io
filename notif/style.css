@@ -50,13 +50,37 @@ nav, article {
     width: 100%;
 }
 
+.img-chess {
+    align-self: flex-end;
+}
+
+.img-chess img {
+    width: 5rem;
+
+}
+
+.img-chess:hover {
+    cursor:pointer;
+}
+
 section {
     padding: 1rem;
 }
 
 .post {
+    color: var(--primary-color-dgray-blue);
     margin-left: 2rem;
     width: 100%;
+}
+
+.post .name {
+    color: #282C33;
+    font-weight: bold;
+}
+
+.post .name:hover {
+    color: var(--primary-color-blue);
+    cursor: pointer;
 }
 
 .post p:nth-child(2) {
@@ -76,10 +100,20 @@ li {
 }
 
 p.blue {
-    background-color: var(--primary-color-lgblue);
-    padding: 1.5rem 2rem;
+    border: 1px solid var(--primary-color-lgblue);
+    color: var(--primary-color-gray-blue);
+    line-height: 1.1;
+    letter-spacing: .05rem;
+    padding: 2.5rem 2rem;
     border-radius: 0.5rem;
     margin-left: 6rem;
+    background-color: unset;
+
+}
+
+p.blue:hover {
+    background-color: var(--primary-color-lgblue);
+    cursor: pointer;
 }
 
 .box {
@@ -101,9 +135,11 @@ p.blue {
 }
 
 nav h1 {
-    font-weight: bold;
+    font-size: 2.4rem;
+    font-weight: 800;
 }
 span.notification {
+    font-size: 1.6rem;
     margin-left: 1rem;
     color: #fff;
     border-radius: 0.5rem;
