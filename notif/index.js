@@ -3,6 +3,12 @@ const bgElements = document.querySelectorAll('li.blue');
 const notification = document.querySelector('.notification');
 let notificationValue = 3;
 
+
+// Notification count
+for (let i = 0; i <= bgElements.length; i++) {
+    notification.textContent = [i];
+}
+
 h4.addEventListener('click', () => {
     bgElements.forEach(element => {
             element.classList.remove('blue');
