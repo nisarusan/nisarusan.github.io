@@ -29,8 +29,15 @@ body {
     flex-wrap: wrap;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: var(--paragraph);
-
+    background-color: var(--primary-color-vlightblue);
 }
+
+
+section {
+    background-color: var(--primary-color-neutral-white);
+    padding: 1rem;
+}
+
 
 nav {
     display: flex;
@@ -70,10 +77,6 @@ nav h4:hover {
 
 .img-chess:hover {
     cursor:pointer;
-}
-
-section {
-    padding: 1rem;
 }
 
 .post {
@@ -171,7 +174,7 @@ span.notification {
     section {
         border-radius: 2rem;
         padding: 2rem;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        /*box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;*/
         max-width: var(--desktop-size);
     }
 }
