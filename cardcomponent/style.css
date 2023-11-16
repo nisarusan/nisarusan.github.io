@@ -120,12 +120,12 @@ section > img {
 
 @media (min-width: 76.8rem) {
 main {
-    border-radius: unset;
+    border-radius: 1rem;
     max-width: 37.75rem;
     max-height: 28.25rem;
     flex-direction: row;
 }
-    section {
-        border-radius: 1rem 0 0 1rem;
+    article {
+        border-radius: 0 1rem 1rem 0rem;
     }
 }
