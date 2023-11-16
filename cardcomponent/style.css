@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --mobile-size: 375px;
+    --desk-size: 1440px;
+    /* Colors */
+
+    --dcyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --dblue: hsl(212, 21%, 14%);
+    --dgray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --font-size: 10px;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--cream);
+}
+
+main {
+    max-width: 37.75rem;
+    max-height: 28.25rem;
+    border-radius: 1rem;
+    display: flex;
+    background: var(--white);
+    flex-wrap: wrap;
+}
+
+section {
+    flex-basis: 50%;
+    display: flex;
+    flex-grow: 1;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.img {
+    background-image: url('./images/image-product-desktop.jpg');
+    object-fit: cover;
+}
+
+article {
+    flex-basis: 50%;
+    flex-grow: 1;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+article p.description {
+    color: var(--dgray);
+    font-size: 1rem;
+}
+
+article h4 {
+    color: var(--dgray);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+}
+
+article h1 {
+    font-family: 'Fraunces', serif;
+}
