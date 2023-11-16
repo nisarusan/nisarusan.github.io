@@ -33,33 +33,30 @@ body {
 }
 
 main {
-    max-width: 37.75rem;
-    max-height: 28.25rem;
     border-radius: 1rem;
+    margin: 1.5rem 2rem;
     display: flex;
     background: var(--white);
-    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 section {
     flex-basis: 50%;
     display: flex;
     flex-grow: 1;
-    border-radius: 1rem 0 0 1rem;
+    flex-shrink: 4;
+    overflow: hidden;
 }
 
-.img {
-    background-image: url('./images/image-product-desktop.jpg');
-    object-fit: cover;
-}
+/*.img {*/
+/*    background-image: url('./images/image-product-desktop.jpg');*/
+/*    object-fit: cover;*/
+/*}*/
 
 article {
     flex-basis: 50%;
     flex-grow: 1;
-    border-radius: 0 1rem 1rem 0;
-}
-
-.inner-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,19 +64,68 @@ article {
     padding: 2rem;
 }
 
+
 article p.description {
     color: var(--dgray);
-    font-size: 1rem;
+    font-size: .85rem;
+    line-height: 1.7;
+}
+
+article > p.price {
+    font-size: 2rem;
+    color: var(--dcyan);
+    font-family: 'Fraunces', serif;
+}
+
+p > span {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dgray);
+    font-size: .8rem;
 }
 
 article h4 {
-    color: var(--dgray);
-    font-size: .8rem;
+    color: #afafaf;
+    font-size: .75rem;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     font-weight: 600;
 }
 
 article h1 {
+    color: var(--dblue);
+    font-size: 2rem;
+    line-height: 1;
     font-family: 'Fraunces', serif;
+}
+
+article > button {
+    font-weight: 800;
+    padding: 1rem;
+    background-color: var(--dcyan);
+    color: var(--white);
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+}
+
+article > button:hover {
+    background-color: var(--dblue);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+section > img {
+    width: 100%;
+}
+
+@media (min-width: 76.8rem) {
+main {
+    border-radius: unset;
+    max-width: 37.75rem;
+    max-height: 28.25rem;
+    flex-direction: row;
+}
+    section {
+        border-radius: 1rem 0 0 1rem;
+    }
 }
