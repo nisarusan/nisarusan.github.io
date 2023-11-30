@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div class="main">
+    <header>
+        <nav>
+            <p>
+                My balance
+            </p>
+            <p class="price">
+                $921.48
+            </p>
+        </nav>
+        <div class="img-wrapper">
+            <img src="./images/logo.svg" alt="Logo" class="icon">
+        </div>
+    </header>
+
+    <section class="bar">
+        <h2>
+            Spending - Last 7 days
+        </h2>
+        <div class="graph">
+            <div class="block">
+                <div class="block-wrapper">
+                    <div class="bg mon" data-amount="$17.45"></div>
+                    <div class="day">mon</div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-wrapper">
+                    <div class="bg tue" data-amount="$34.91"></div>
+                    <div class="day">tue</div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-wrapper">
+                    <div class="bg wed" data-amount="$52.36"></div>
+                    <div class="day">wed</div>
+
+                </div>
+            </div>
+            <div class="block ">
+                <div class="block-wrapper">
+                    <div class="bg thu" data-amount="$31.07"></div>
+                    <div class="day">thu</div>
+                </div>
+            </div>
+            <div class="block ">
+                <div class="block-wrapper">
+                    <div class="bg fri" data-amount="$23.39"></div>
+                    <div class="day">fri</div>
+
+                </div>
+            </div>
+            <div class="block ">
+                <div class="block-wrapper">
+                    <div class="bg sat" data-amount="$43.28"></div>
+                    <div class="day">sat</div>
+
+                </div>
+            </div>
+            <div class="block ">
+                <div class="block-wrapper">
+                    <div class="bg sun" data-amount="$25.48"></div>
+                    <div class="day">sun</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <div class="month">
+                <p>
+                    Total this month
+                </p>
+                <h2>  $478.33</h2>
+            </div>
+            <div class="last-month">
+                <p>+2.4%</p>
+                <p>from last month</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
